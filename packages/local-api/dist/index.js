@@ -21,7 +21,7 @@ const serve = (port, filename, dir, useProxy) => {
     }
     else {
         // grab build files for users to access react app when running the cli
-        const packagePath = require.resolve("local-client/build/index.html");
+        const packagePath = require.resolve("@jsnotepadlalith/local-client/build/index.html");
         app.use(express_1.default.static(path_1.default.dirname(packagePath)));
     }
     return new Promise((resolve, reject) => {

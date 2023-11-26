@@ -1,12 +1,16 @@
 {
-  "name": "local-api",
+  "name": "@jsnotepadlalith/local-api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files":["dist"],
+  "publishConfig": {
+    "access":"public"
+  },
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +24,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
-    "local-client": "^0.1.0"
+    "@jsnotepadlalith/local-client": "^0.1.0"
   }
 }

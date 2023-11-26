@@ -22,7 +22,7 @@ export const serve = (
     );
   } else {
     // grab build files for users to access react app when running the cli
-    const packagePath = require.resolve("local-client/build/index.html");
+    const packagePath = require.resolve("@jsnotepadlalith/local-client/build/index.html");
     app.use(express.static(path.dirname(packagePath)));
   }
 
