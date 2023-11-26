@@ -21,10 +21,10 @@
     "@jsnotepadlalith/local-client": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.9.5",
-    "esbuild": "0.8.26",
-    "typescript": "^5.3.2",
     "@jsnotepadlalith/local-api": "^1.0.0",
-    "commander": "^11.1.0"
+    "@types/node": "^20.9.5",
+    "commander": "^11.1.0",
+    "esbuild": "0.8.26",
+    "typescript": "^5.3.2"
   }
 }
