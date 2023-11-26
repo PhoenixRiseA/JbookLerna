@@ -10,7 +10,7 @@ export const serve = (
   useProxy: boolean
 ) => {
   const app = express();
-  app.use('/cells',createCellsRouter(filename,dir));
+  app.use(createCellsRouter(filename,dir));
   if (useProxy) {
     // used to allow development is local machine
     app.use(

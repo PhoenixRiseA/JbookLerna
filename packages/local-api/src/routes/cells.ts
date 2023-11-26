@@ -16,7 +16,7 @@ export const createCellsRouter = (filename:string, dir:string) => {
   router.use(express.json());
 
   const fullPath = path.join(dir, filename);
-  router.get('/', async(req, res)=>{
+  router.get('/cells', async(req, res)=>{
     const isLocalApiError = (err: any): err is LocalApiError => {
       return typeof err.code === "string";
     };
@@ -40,7 +40,7 @@ export const createCellsRouter = (filename:string, dir:string) => {
   
   });
   
-  router.post('/', async (req, res)=>{
+  router.post('/cells', async (req, res)=>{
     // Take the list of cells from the request obj
   
     // serialize them 

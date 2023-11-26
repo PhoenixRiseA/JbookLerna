@@ -20,7 +20,7 @@ const createCellsRouter = (filename, dir) => {
     const router = express_1.default.Router();
     router.use(express_1.default.json());
     const fullPath = path_1.default.join(dir, filename);
-    router.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    router.get('/cells', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         const isLocalApiError = (err) => {
             return typeof err.code === "string";
         };
@@ -42,7 +42,7 @@ const createCellsRouter = (filename, dir) => {
             }
         }
     }));
-    router.post('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    router.post('/cells', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         // Take the list of cells from the request obj
         // serialize them 
         const { cells } = req.body;
