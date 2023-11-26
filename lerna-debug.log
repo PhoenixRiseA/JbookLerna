@@ -1,15 +1,7 @@
-0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   scope: 'local-api',
-0 silly argv   globs: [],
-0 silly argv   lernaVersion: '3.22.1',
-0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js',
-0 silly argv   pkg: 'local-client'
-0 silly argv }
-1 notice cli v3.22.1
-2 verbose rootPath C:\Users\SaiLalithKumar\udemy-ts-project\refactorProject\jbook
-3 notice filter including "local-api"
-4 info filter [ 'local-api' ]
-5 info Adding local-client in 1 package
-6 verbose add local-client@^0.1.0 to dependencies in local-api
-7 error
+25 error Error: Command failed: git status --porcelain
+25 error fatal: 'packages/local-client/.git' not recognized as a git repository
+25 error
+25 error     at makeError (C:\Users\SaiLalithKumar\AppData\Roaming\nvm\v16.18.1\node_modules\lerna\node_modules\execa\index.js:174:9)
+25 error     at C:\Users\SaiLalithKumar\AppData\Roaming\nvm\v16.18.1\node_modules\lerna\node_modules\execa\index.js:278:16
+25 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+25 error     at async Promise.all (index 1)
